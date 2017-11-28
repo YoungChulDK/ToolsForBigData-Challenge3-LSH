@@ -1,4 +1,4 @@
-#Challenge3 - Feature Hashing of 9700 Videos
+# Challenge3 - Feature Hashing of 9700 Videos
 
 **DTU - Computational Tools for Big Data - Week 12 + 13**
 
