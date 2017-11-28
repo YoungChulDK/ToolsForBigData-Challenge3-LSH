@@ -16,6 +16,7 @@ The dataset is these 9700 processed videos.
 - The videos are available here: https://www.dropbox.com/s/8rs04nhptd8s61q/videos.zip
 
 **Showing how good the solution is**
+
 This script (https://gist.github.com/utdiscant/213b6c1bdad5f93bd5d1ca1a7eece375) calculates the so-called adjusted Rand Index of two clusterings (https://en.wikipedia.org/wiki/Rand_index). The input for the function in the script is a list of sets, where each set corresponds to a cluster and contains names of video files without the ending (eg. DMDR1U2RA7VN). The truth-variable in the script contains the actual clustering, and your clustering will be compared to this clustering.
 
 To show how good your solution is, compute the rand-index between your clustering and the truth using that function. You should of course not use the truth when building your hash-functions, but you can use the rand-index calculation to see how you are doing.
