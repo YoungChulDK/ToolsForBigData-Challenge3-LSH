@@ -1,6 +1,6 @@
 #Challenge3 - Feature Hashing of 9700 Videos
-#DTU - Computational Tools for Big Data
-#Week 12 + 13
+
+**DTU - Computational Tools for Big Data - Week 12 + 13**
 
 For this challenge you have to build your own locality sensitive hash function to hash small videos. You will get around 5GB (compressed) of videos (around 10k small videos). You have to write an LSH that takes a video and returns hash. You then have to cluster the videos using these hashes. How the dataset was constructed
 
