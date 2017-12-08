@@ -41,6 +41,11 @@ def getImgMean(filename):
 	elapsedTime = time.time()-t1
 	return avg, elapsedTime
 
+def create_vector(str):
+	vec = []
+	for c in str:
+		vec.append(float(ord(c)))
+	return vec
 ##------------------Main--------------------##
 
 #4 videos, from 2 categories
@@ -82,8 +87,9 @@ imgHash4P = imagehash.phash(pilMean4)
 
 ##---------------KMeans-----------------##
 
-X = np.array([[str(imgHash), str(imgHashP)], [str(imgHash2), str(imgHash2P)], [str(imgHash3), str(imgHash3P)], [str(imgHash4), str(imgHash4P)]])
+print(create_vector(str(imgHash)))
+
+X = np.array([create_vector(str(imgHash)),create_vector(str(imgHashP)), create_vector(str(imgHash2)), create_vector(str(imgHash2P)), create_vector(str(imgHash3)), create_vector(str(imgHash3P)), create_vector(str(imgHash4)), create_vector(str(imgHash4P))])
+
 kmeans = KMeans(n_clusters=2, random_state=0).fit(X)
-kmeans.labels_array([0, 0, 1, 1], dtype=int32)
-kmeans.predict([[0, 0], [4, 4]])
 
